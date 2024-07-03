@@ -12,7 +12,7 @@
 }
 
 .main-content{
-    background-color: grey;
+    background-color: rgb(224, 219, 219);
 
 }
 .nav-img{
@@ -26,7 +26,7 @@
 .dashboard{
     font-size: 26px;
 }
-.head, .nav-content{
+.head, .nav-content, .ann-imgs{
     display: flex;
     gap: 10px;
 
@@ -38,13 +38,34 @@
     width: 500px;
     height: 20px;
 }
-.upper-sec, .side-bar, .main-container{
+.upper-sec, .side-bar, .main-container, .main-content,.projects{
     display: grid;
 }
 .upper-sec{
     grid-template-columns: 2fr 1fr;
     gap: 50px;
 }
-.button-holder{
+.projects{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.your-projects{
+    grid-column: 1/4;
+}
+.cards{
+    background-color: white;
+    border-radius: 5px;
+}
+.main-content{
+    grid-template-columns: 2fr 1fr;
+}
+.ann-imgs>img{
+    height: 30px;
+    width: 30px;
+}
+.announcements{
+    
+}
+.grid{
     
 }

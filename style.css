@@ -12,7 +12,7 @@ html, body {
 }
 
 .header {
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 .side-bar {
@@ -32,7 +32,7 @@ html, body {
     padding: 10px;
 }
 
-.nav-img, .header-icon{
+.nav-img, .header-icon, .card-image{
     height: 20px;
     width: 20px;
 }
@@ -63,7 +63,10 @@ html, body {
 
 .search {
     width: 500px;
-    height: 20px;
+    height: 15px;
+    border-radius: 10px;
+    background-color:  rgb(224, 219, 219);
+    border:  1px solid rgb(224, 219, 219);
 }
 
 .upper-sec {
@@ -74,9 +77,9 @@ html, body {
     padding: 10px;
 }
 
-.projects {
+.all-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -85,8 +88,8 @@ html, body {
 }
 
 .cards {
-    background-color: white;
-    border-radius: 5px;
+    height: 150px;
+    width: 250px;
     padding: 10px;
 }
 
@@ -109,6 +112,8 @@ html, body {
 
 .grid {
     display: grid;
+    height: 200px;
+    width: 250px;
     gap: 10px;
 }
 .dashborad-icon, .profile-pic{
@@ -117,4 +122,12 @@ html, body {
 }
 .profile-pic{
     border-radius: 50%;
+}
+.trending{
+    margin-top: 10px;
+}
+.cards, .grid{
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
 }

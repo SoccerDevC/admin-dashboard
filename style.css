@@ -13,6 +13,7 @@ html, body {
 
 .header {
     background-color: white;
+    padding: 10px 50px 10px 20px;
 }
 
 .side-bar {
@@ -35,6 +36,9 @@ html, body {
 .nav-img, .header-icon, .card-image{
     height: 20px;
     width: 20px;
+}
+.card-image {
+    margin-left: 5px; 
 }
 
 .nav-img, .dashborad-icon{
@@ -70,17 +74,15 @@ html, body {
 }
 
 .upper-sec {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    justify-content: space-between;
     gap: 50px;
     align-items: center;
-    padding: 10px;
 }
 .lower-sec {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
 }
 .all-cards {
     display: grid;
@@ -93,11 +95,24 @@ html, body {
 }
 
 .cards {
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    position: relative; 
+    height: 130px;
     width: 250px;
     padding: 10px;
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
+    filter: brightness(50%);
 }
-
+.card-image-group {
+    position: absolute;
+    /* margin-top: 20px; */
+    bottom: 10px; 
+    right: 10px; 
+}
 .ann-imgs {
     display: flex;
     align-items: center;
@@ -108,9 +123,11 @@ html, body {
     height: 30px;
     width: 30px;
 }
-
+.card-title,.head {
+    font-weight: bold;
+}
 .announcements,
-.trending {
+.trending, .your-projects {
     font-weight: bold;
     margin: 10px 0;
 }
@@ -135,4 +152,25 @@ html, body {
     border-radius: 5px;
     background-color: white;
     padding: 10px;
+}
+
+.button-holder> button{
+    background-color: #3b82f6;
+    border: 1px solid #3b82f6;
+    height: 25px;
+    width: 70px;
+    border-radius: 15px;
+    color: white;
+    padding: 2px 10px;
+    margin-left: 10px;
+}
+.help, .nav-list{
+    display: grid;
+    gap: 10px;
+}
+.mid-text{
+    font-size:14px;
+}
+.small-text{
+    font-size: 11px;
 }
